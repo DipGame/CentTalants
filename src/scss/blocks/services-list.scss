@@ -1,0 +1,21 @@
+.services-list {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .default {
+        margin: 0;
+        gap: 30px;
+
+        ul {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .services-list {
+        margin-bottom: 60px;
+    }
+}

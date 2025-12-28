@@ -1,0 +1,228 @@
+.main-banner-section {
+    background-image: url('.././img/6ef8eee8e4c7789a9c74a4cf822b4e9742bbc037.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner {
+    display: flex;
+}
+
+.main-banner-left {
+    max-width: 278px;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #FFF;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.main-banner-left-item {
+    a {
+        padding: 29px 0;
+        display: block;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #534CCA;
+        border-bottom: 1px solid #E1E2FF;
+
+
+
+        &:hover {
+            color: var(--link-color);
+        }
+    }
+
+    &:last-child {
+        a {
+            border-bottom: none;
+        }
+    }
+}
+
+.bannerSwiper {
+    width: 100%;
+
+    .swiper-slide {
+        display: flex;
+        padding: 20px 30px 33px;
+        gap: 30px;
+        position: relative;
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+
+            .default {
+                margin-bottom: 0;
+            }
+
+            .h2 {
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 38px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0px;
+            }
+
+            .button_v4 {
+                max-width: 240px;
+
+                &:hover {
+                    background-color: #FFF;
+                    color: #534CCA;
+                }
+            }
+        }
+
+        .background-svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+            &.v1 {
+                transform: translateX(-2px) translateY(-8px);
+            }
+
+            &.v2 {
+                transform: translateX(-285px) translateY(-14px);
+                width: 134px;
+                height: 137px;
+                top: 0;
+                bottom: auto;
+                right: 0;
+                left: auto;
+            }
+        }
+
+        * {
+            color: #FFF;
+        }
+
+        img {
+            width: 100%;
+            max-width: 349px;
+            aspect-ratio: 349/266;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 0 60px 0 60px;
+            overflow: hidden;
+        }
+
+        .background-svg-container {
+            width: 100%;
+            max-width: 349px;
+            aspect-ratio: 349/266;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-banner-section {
+        padding: 0;
+    }
+
+    .main-banner {
+        flex-direction: column-reverse;
+    }
+
+    .main-banner-left {
+        max-width: 100%;
+    }
+
+    .bannerSwiper .swiper-slide .left .h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    // aaeefec01f777547925dc16ba0a747f201f17175
+    .main-banner-section {
+        background-image: url('.././img/aaeefec01f777547925dc16ba0a747f201f17175.jpg');
+    }
+
+    .bannerSwiper .swiper-slide {
+        flex-direction: column-reverse;
+        padding: 16px var(--def-padding) 0;
+        justify-content: start;
+        padding-bottom: 60px;
+
+        .background-svg-container {
+            position: relative;
+        }
+
+        .background-svg {
+
+            &.v1 {
+                width: 958px;
+                max-width: 958px;
+                min-width: 958px;
+                right: 0;
+                left: auto;
+                height: 105px;
+                transform: translateX(49px) translateY(24px);
+            }
+
+            &.v2 {
+                transform: translateX(-255px) translateY(-31px);
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-banner-left {
+        padding: 0 30px;
+    }
+
+    .bannerSwiper {
+        .swiper-slide {
+            gap: 20px;
+
+            .left {
+                .h2 {
+                    font-size: 24px;
+                }
+
+                .button_v4 {
+                    max-width: 215px;
+                    min-height: 50px;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: 14px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                }
+            }
+
+
+            img {
+                aspect-ratio: 343/240;
+            }
+
+            .background-svg-container {
+                aspect-ratio: 343/240;
+            }
+        }
+    }
+}

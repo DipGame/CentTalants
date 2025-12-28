@@ -1,0 +1,54 @@
+.almanac-content-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .almanac-content-item-container {
+        gap: 10px;
+    }
+}
+
+.almanac-content-item-content {
+    padding: 20px;
+    border: 1px solid #E4E4E4;
+
+    .default {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.almanac-content-item-content-title {
+    font-weight: 900;
+    font-style: Black;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.almanac-content-item-content-image {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 721px) {
+    .almanac-content-item-content {
+        &.mob {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .almanac-content-item-content {
+        &.desc {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.main-form-section {
+    background-color: #9062CF;
+}
+
+.main-form {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+        font-weight: 900;
+        font-style: Black;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+    .main-form-content {
+        display: flex;
+        flex-direction: column;
+
+        .inputs_cont {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+
+            &.v1 {
+                margin-bottom: 40px;
+            }
+
+            &.v2 {
+                margin-bottom: 20px;
+            }
+
+            &.v3 {
+                margin-bottom: 30px;
+            }
+
+            .input_cont {
+                width: 100%;
+
+                * {
+                    transition: .5s;
+                }
+
+                &.err {
+
+                    input,
+                    textarea {
+                        background-color: var(--color-red);
+                        color: #FFF;
+
+                        &::placeholder {
+                            color: #FFF;
+                        }
+                    }
+                }
+
+                input,
+                textarea {
+                    border-radius: 5px;
+                    height: 60px;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    padding: 0 20px;
+                    width: 100%;
+                    background-color: #FFF;
+
+                    &::placeholder {
+                        color: var(--text-color);
+                    }
+                }
+
+                textarea {
+                    padding: 20px;
+                    height: 120px;
+
+                    resize: none;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .checkbox {
+            align-items: center;
+            margin: 0 0 30px;
+
+            &.err {
+                .check-box-btn {
+                    background-color: var(--color-red);
+                }
+            }
+
+            .check-box-btn {
+                background-color: #FFF;
+            }
+
+            p,
+            a {
+                color: #FFF;
+                line-height: 100%;
+                font-size: 16px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+
+            &.checked {
+                .check-box-btn {
+                    background: none;
+                }
+            }
+        }
+
+        .button_v4 {
+            max-width: 231px;
+            min-height: 60px;
+            border-radius: 5px;
+            font-size: 18px;
+
+            &:hover {
+                background-color: #FFF;
+                border: 1px solid #FFF;
+                color: #9062CF;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-form-content {
+        .inputs_cont {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-form {
+        padding: 40px 0;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .main-form-content {
+            .inputs_cont {
+                &.v1 {
+                    margin-bottom: 20px;
+                }
+
+                &.v3 {
+                    margin-bottom: 40px;
+                }
+
+                .input_cont {
+                    input {
+                        height: 50px;
+                    }
+                }
+            }
+
+            .checkbox {
+                p,
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            .button_v4 {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.about_v2-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .default {
+        margin: 0;
+    }
+
+    .video_v1 {
+        border-radius: 5px;
+        overflow: hidden;
+        aspect-ratio: 894/470;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about_v2-content {
+        .video_v1 {
+            border-radius: 5px;
+            overflow: hidden;
+            aspect-ratio: 343/180;
+        }
+    }
+}

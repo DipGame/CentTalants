@@ -1,0 +1,37 @@
+.about-menu-horozontal-section {
+    background-color: #534CCA;
+}
+
+.about-menu-horozontal {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-menu-horozontal-link {
+    height: auto;
+    padding: 16px 40px;
+    font-size: 16px;
+    min-height: 70px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #FFF !important;
+        color: #534CCA !important;
+    }
+}
+
+@media (max-width: 970px) {
+    .about-menu-horozontal {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .about-menu-horozontal-link {
+        font-size: 14px;
+    }
+}

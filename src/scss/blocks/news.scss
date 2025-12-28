@@ -1,0 +1,125 @@
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-content-container {
+    .default {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.news-content-item {
+    display: flex;
+    gap: 40px;
+    padding: 30px 20px 20px;
+    border: 1px solid #CDCEFF;
+
+    &.v2 {
+        flex-direction: row-reverse;
+        padding: 20px;
+        align-items: center;
+
+        img {
+            aspect-ratio: 373/210;
+            max-width: 373px;
+        }
+
+        @media (max-width: 1150px) and (min-width: 971px) {
+            img {
+                max-width: 250px;
+            }
+        }
+    }
+
+    img {
+        aspect-ratio: 300/210;
+        width: 100%;
+        max-width: 300px;
+        object-fit: cover;
+        object-position: center;
+        height: fit-content;
+    }
+
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-content-title-date {
+        font-weight: 900;
+        font-style: Black;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: #90A0C4;
+    }
+
+    .right-content-title-title {
+        font-weight: 900;
+        font-style: Black;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0px;
+        color: #534CCA;
+    }
+
+    .button {
+        margin-top: 5px;
+        max-width: 138px;
+        min-height: 40px;
+        font-size: 12px;
+        border: 1px solid #90A0C4;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #90A0C4;
+
+        &:hover {
+            background-color: #534CCA;
+            color: #FFF;
+            border: 1px solid #534CCA;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .news-content-item {
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            max-width: 100%;
+        }
+
+        &.v2 {
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .news-content-item {
+        padding: 20px;
+
+        img {
+            aspect-ratio: 335/234;
+        }
+
+        .right-content-title-title {
+            font-size: 14px;
+        }
+
+    }
+}

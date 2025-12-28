@@ -1,0 +1,33 @@
+.awards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 20px;
+}
+
+.awards-container {
+    img {
+        width: 100%;
+        aspect-ratio: 208/300;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    transition: .5s;
+
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+@media (max-width: 720px) {
+    .awards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
