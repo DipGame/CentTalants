@@ -793,48 +793,48 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // if (document.querySelector('.sogl')) {
-    //     const sogl = document.querySelector('.sogl');
-    //     const soglBtn = sogl.querySelector('.button');
+    if (document.querySelector('.sogl')) {
+        const sogl = document.querySelector('.sogl');
+        const soglBtn = sogl.querySelector('.button');
 
-    //     var date = new Date();
-    //     function getCookie(name) {
-    //         var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-    //         return matches ? decodeURIComponent(matches[1]) : undefined;
-    //     }
+        var date = new Date();
+        function getCookie(name) {
+            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
 
-    //     if (getCookie('time_open') && getCookie('click_sogl_ok')) {
-    //         let one = date.getMinutes();
-    //         let two = getCookie('time_open');
-    //         if (one > two) {
-    //             let rez = one - two;
-    //             if (rez >= 50 || !getCookie('click_sogl_ok')) {
+        if (getCookie('time_open') && getCookie('click_sogl_ok')) {
+            let one = date.getMinutes();
+            let two = getCookie('time_open');
+            if (one > two) {
+                let rez = one - two;
+                if (rez >= 50 || !getCookie('click_sogl_ok')) {
 
-    //                 soglBtn.addEventListener('click', () => {
-    //                     document.cookie = `click_sogl_ok=true; path=/`;
-    //                     sogl.classList.add("invise");
-    //                 })
-    //                 sogl.classList.remove("invise");
-    //             }
-    //         } else if (one < two && getCookie('click_sogl_ok')) {
-    //             let rez = 60 - two + one;
-    //             if (rez >= 50 && !getCookie('click_sogl_ok')) {
-    //                 soglBtn.addEventListener('click', () => {
-    //                     document.cookie = `click_sogl_ok=true; path=/`;
-    //                     sogl.classList.add("invise");
-    //                 })
-    //                 sogl.classList.remove("invise");
-    //             }
-    //         }
-    //     } else {
-    //         soglBtn.addEventListener('click', () => {
-    //             document.cookie = `click_sogl_ok=true; path=/`;
-    //             sogl.classList.add("invise");
-    //         })
-    //         sogl.classList.remove("invise");
-    //         document.cookie = `time_open=${date.getMinutes()}; path=/`;
-    //     }
-    // }
+                    soglBtn.addEventListener('click', () => {
+                        document.cookie = `click_sogl_ok=true; path=/`;
+                        sogl.classList.add("invise");
+                    })
+                    sogl.classList.remove("invise");
+                }
+            } else if (one < two && getCookie('click_sogl_ok')) {
+                let rez = 60 - two + one;
+                if (rez >= 50 && !getCookie('click_sogl_ok')) {
+                    soglBtn.addEventListener('click', () => {
+                        document.cookie = `click_sogl_ok=true; path=/`;
+                        sogl.classList.add("invise");
+                    })
+                    sogl.classList.remove("invise");
+                }
+            }
+        } else {
+            soglBtn.addEventListener('click', () => {
+                document.cookie = `click_sogl_ok=true; path=/`;
+                sogl.classList.add("invise");
+            })
+            sogl.classList.remove("invise");
+            document.cookie = `time_open=${date.getMinutes()}; path=/`;
+        }
+    }
 
 
 

@@ -893,31 +893,26 @@ h1.invise {
 
 .sogl {
 	position: fixed;
-	bottom: 0;
-	left: 0;
-	background-color: #EAE7E1;
-	;
+	bottom: 51px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #FFFFFF;
 	width: 100%;
+	max-width: 980px;
 	transition: 0.5s;
 	display: flex;
-	padding: 30px 16px;
+	padding: 30px 24px;
 	/* height: 80px; */
 	z-index: 10000;
-	box-sizing: border-box;
-	border-top: 1px solid #EAE7E1;
-	-webkit-box-shadow: 0px -4px 8px 0px rgba(34, 60, 80, 0.2);
-	-moz-box-shadow: 0px -4px 8px 0px rgba(34, 60, 80, 0.2);
-	box-shadow: 0px -4px 8px 0px rgba(34, 60, 80, 0.2);
+	border-radius: 8px;
 }
 
 .sogl * {
-	color: #0D1011;
+	color: #262540;
 }
 
 .sogl .cont {
 	width: 100%;
-	max-width: 1230px;
-	margin: 0 auto;
 	display: flex;
 	gap: 20px;
 	justify-content: space-between;
@@ -925,32 +920,50 @@ h1.invise {
 }
 
 .sogl .cont p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
-	line-height: 25.2px;
+	line-height: 140%;
 	text-align: left;
-	max-width: 765px;
+	max-width: 749px;
 }
 
 .sogl .cont p a {
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 25.2px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%;
 	text-align: left;
-	color: #725E51;
 }
 
 .sogl .cont .button {
-	max-width: 250px;
+	max-width: 163px;
+	background-color: #F7AC00;
+	border: none;
+	min-height: 56px;
+	border-radius: 12px;
+	font-family: Lab Grotesque;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 16px;
+	leading-trim: NONE;
+	line-height: 100%;
+	letter-spacing: 0px;
+	opacity: 1;
+	transition: .5s;
+	color: #FFF;
 
-	&:not(:hover) {
-		color: #E4E2DE;
+	&:hover {
+		transition: .5s;
+		background-color: #6461E2;
 	}
 }
 
 @media (max-width: 720px) {
 	.sogl .cont {
 		flex-direction: column;
+	}
+
+	.sogl {
+		bottom: 0;
 	}
 
 	.sogl .cont .button {
@@ -1112,7 +1125,7 @@ h1.invise {
 	position: relative;
 	cursor: pointer;
 	display: block;
-	
+
 
 	&::before {
 		content: '';

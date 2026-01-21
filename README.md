@@ -1,1 +1,14 @@
-# CentTalants
+https://dipgame.github.io/CentTalants/
+https://dipgame.github.io/CentTalants/about.html
+https://dipgame.github.io/CentTalants/about_v2.html
+https://dipgame.github.io/CentTalants/almanac.html
+https://dipgame.github.io/CentTalants/almanac-detail.html
+https://dipgame.github.io/CentTalants/awards.html
+https://dipgame.github.io/CentTalants/docs.html
+https://dipgame.github.io/CentTalants/events.html
+https://dipgame.github.io/CentTalants/events-detail.html
+https://dipgame.github.io/CentTalants/news.html
+https://dipgame.github.io/CentTalants/partners.html
+https://dipgame.github.io/CentTalants/services.html
+https://dipgame.github.io/CentTalants/smi.html
+https://dipgame.github.io/CentTalants/tabs.html
